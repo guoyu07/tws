@@ -11,6 +11,11 @@ jQuery(document).ready(function($) {
 		$.get('ajax/index.php?query='+query, function(data) {
 			//as soon as the data is ready, insert into div#table
 			$("#table").html(data);
+			$("button").each(function (index){
+				url=$(this).attr("href");
+				$(this).load(url+" [data-card-type=photo] img");
+
+			});
 		});
 	});
 });
