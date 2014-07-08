@@ -1,33 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Search Twitter!</title>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="jsonToTable.js"></script>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-  <style>
-	img{
-		vertical-align: center;
-		text-align: center;
-		margin-left: 35%;
-		margin-top:10%;
-	}
-  </style>
-  <script>
-	jQuery(document).ready(function($) {
-			$("#search").on('submit', function(event) {
-  			event.preventDefault();
-  			$("#table").html("<img src='//i.stack.imgur.com/taN7r.gif' height='250' width='250'>");
-  			query=$("#query").val();
-			$.get('ajax/index.php?query='+query, function(data) {
-				$("#table").html(data);
-			});
-  		});
-
-		
-	});
-  </script>
+	<meta charset="UTF-8">
+	<title>Search Twitter!</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-default" role="navigation">
@@ -68,6 +47,6 @@
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</nav>
-  <div id="table"></div>
+	<div id="table"></div>
 </body>
 </html>

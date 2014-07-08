@@ -1,0 +1,12 @@
+/*
+	Just a rough style sheet to center the image.
+*/	
+	img{
+		vertical-align: center;
+		text-align: center;
+		margin-left: 35%;
+		margin-top:10%;
+	}
+	input[type=text], textarea {
+		width:300px !important;
+	}
